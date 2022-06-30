@@ -13,5 +13,8 @@
     align-items: center;
 }
 .Squirtle-color{
-    background : rgb(96, 96, 243) ; 
+    background-color: rgb(3, 3, 247) !important ; 
+}
+.rhyron-color{
+    background-color: rgb(113, 66, 66) !important ; 
 }
