@@ -15,6 +15,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     
 
 }
+=======
+}
+.Squirtle-color{
+    background-color: rgb(3, 3, 247) !important ; 
+}
+.rhyron-color{
+    background-color: rgb(113, 66, 66) !important ; 
+}
+>>>>>>> Nico
