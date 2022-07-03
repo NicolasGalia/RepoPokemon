@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Style.css" />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -15,15 +15,209 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-
+    <nav class="navbar navbar-dark navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pokedex</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorías
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Fuego</a></li>
+                <li><a class="dropdown-item" href="#">Agua</a></li>
+                <li><a class="dropdown-item" href="#">Tierra</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar un Pokemon"
+              aria-label="Search"
+            />
+            <button class="btn btn color-ligth" type="submit">
+              <svg
+                class="icono"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </nav>
-    <main>
-  
+
+    <main class="container mt-2">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/pokemon-pikachu-slider.jpg"
+              class="d-block w-100"
+              alt="pikachu"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/bulbasasur-slider.jpg"
+              class="d-block w-100"
+              alt="bulbasaur"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/pokebola-slider.jpg"
+              class="d-block w-100"
+              alt="Pokebola"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
+    <section class="container row d-flex justify-content-center m-auto">
+      <div class="card col-sm-12 col-md-4 col-lg-3 m-3">
+        <img src="img/cyndraquil.png" class="card-img-top" alt="Bulbasaur" />
+        <div class="card-body">
+          <p class="card-title">#155</p>
+          <h3 class="card-text fs-2">Cyndaquil</h3>
+          <p class="badge rounded-pill bg-danger fs-5">Fuego</p>
+          <br />
+          <a href="pages/detalles.html" class="btn btn-primary fs-3"
+            >Ver detalle
+          </a>
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-4 col-lg-3 m-3">
+        <img src="img/Machamps.png" class="card-img-top" alt="machamps" />
+        <div class="card-body">
+          <p class="card-title">#090</p>
+          <h3 class="card-text fs-2">Machamps</h3>
+          <p class="badge rounded-pill bg-dark fs-5">Lucha</p>
+          <br />
+          <a href="#" class="btn btn-primary fs-3">Ver detalle</a>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-md-4 col-lg-3 m-3">
+        <img src="img/Charmander.png" class="card-img-top" alt="Charmander" />
+        <div class="card-body">
+          <p class="card-title">#002</p>
+          <h3 class="card-text fs-2">Charmander</h3>
+          <p class="badge rounded-pill bg-danger fs-5">Fuego</p>
+          <br />
+          <a href="#" class="btn btn-primary fs-3">Ver detalle</a>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-md-4 col-lg-3 m-3">
+        <img src="img/Pikachu.png" class="card-img-top" alt="Pikachu" />
+        <div class="card-body">
+          <p class="card-title">#074</p>
+          <h3 class="card-text fs-2">Pikachu</h3>
+          <p class="badge rounded-pill bg-warning fs-5">Electrico</p>
+          <br />
+          <a href="#" class="btn btn-primary fs-3">Ver detalle</a>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-md-4 col-lg-3 m-3">
+        <img src="img/Rayquaza.png" class="card-img-top" alt="Rayquaza" />
+        <div class="card-body">
+          <p class="card-title">#190</p>
+          <h3 class="card-text fs-2">Rayquaza</h3>
+          <p class="badge rounded-pill bg-success fs-5">Volador</p>
+          <p class="badge rounded-pill bg-warning fs-5">Electrico</p>
+          <br />
+          <a href="#" class="btn btn-primary fs-3">Ver detalle</a>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-md-4 col-lg-3 m-3">
+        <img src="img/Rhyhorn.png" class="card-img-top" alt="rhyron" />
+        <div class="card-body">
+          <p class="card-title">#210</p>
+          <h3 class="card-text fs-2">Rhyhorn</h3>
+          <p class="badge rounded-pill bg-secondary fs-5">Piedra</p>
+          <p class="badge rounded-pill bg-light fs-5 rhyron-color">Tierra</p>
+          <br />
+          <a href="#" class="btn btn-primary fs-3">Ver detalle</a>
+        </div>
+      </div>
+      <div class="card col-sm-12 col-md-4 col-lg-3 m-3">
+        <img src="img/Squirtle.png" class="card-img-top" alt="squirtle" />
+        <div class="card-body">
+          <p class="card-title">#007</p>
+          <h3 class="card-text fs-2">Squirtle</h3>
+          <p class="badge rounded-pill bg-primary fs-5 Squirtle-color">Agua</p>
+          <br />
+          <a href="#" class="btn btn-primary fs-3">Ver detalle</a>
+        </div>
+      </div>
+    </section>
+
     <footer>
-        
+      <div class="footer">
+        <p class="m-0">&copy; 2021 Todos los derechos reservados</p>
+      </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

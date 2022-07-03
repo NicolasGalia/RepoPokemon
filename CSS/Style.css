@@ -1,0 +1,26 @@
+
+
+
+.icono{
+    color: #FFFFFF;
+}
+
+
+.footer{
+    height: 50px;
+    background: black;
+    color: white;
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.Squirtle-color{
+    background-color: rgb(3, 3, 247) !important ; 
+}
+.rhyron-color{
+    background-color: rgb(113, 66, 66) !important ; 
+}
