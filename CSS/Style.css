@@ -1,10 +1,6 @@
-
-
-
 .icono{
     color: #FFFFFF;
 }
-
 
 .footer{
     height: 50px;
@@ -16,11 +12,13 @@
     justify-content: center;
     align-items: center;
     
-
 }
 .Squirtle-color{
-    background-color: rgb(3, 3, 247) !important ; 
+    background-color: rgb(3, 3, 247) !important; 
 }
 .rhyron-color{
-    background-color: rgb(113, 66, 66) !important ; 
+    background-color: brown !important;
+}
+.img-slider{
+height: 600px;
 }
